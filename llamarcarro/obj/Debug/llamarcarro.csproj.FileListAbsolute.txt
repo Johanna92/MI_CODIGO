@@ -1,0 +1,16 @@
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\bin\Debug\llamarcarro.exe.config
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\bin\Debug\llamarcarro.exe
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\bin\Debug\llamarcarro.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\bin\Debug\carro.dll
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\bin\Debug\carro.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\obj\Debug\llamarcarro.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\obj\Debug\llamarcarro.exe
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\llamarcarro\obj\Debug\llamarcarro.pdb
+E:\escritorio\llamarcarro\llamarcarro\bin\Debug\llamarcarro.exe.config
+E:\escritorio\llamarcarro\llamarcarro\obj\Debug\llamarcarro.exe
+E:\escritorio\llamarcarro\llamarcarro\obj\Debug\llamarcarro.pdb
+E:\escritorio\llamarcarro\llamarcarro\bin\Debug\llamarcarro.exe
+E:\escritorio\llamarcarro\llamarcarro\bin\Debug\llamarcarro.pdb
+E:\escritorio\llamarcarro\llamarcarro\bin\Debug\carro.dll
+E:\escritorio\llamarcarro\llamarcarro\bin\Debug\carro.pdb
+E:\escritorio\llamarcarro\llamarcarro\obj\Debug\llamarcarro.csprojResolveAssemblyReference.cache

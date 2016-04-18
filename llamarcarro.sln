@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "llamarcarro", "llamarcarro\llamarcarro.csproj", "{F47A2E8C-0D78-4B74-A89E-4E92517BF8C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "carro", "carro\carro.csproj", "{20C1DA00-8854-4AF3-932E-6512B30BD809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F47A2E8C-0D78-4B74-A89E-4E92517BF8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47A2E8C-0D78-4B74-A89E-4E92517BF8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47A2E8C-0D78-4B74-A89E-4E92517BF8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47A2E8C-0D78-4B74-A89E-4E92517BF8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C1DA00-8854-4AF3-932E-6512B30BD809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C1DA00-8854-4AF3-932E-6512B30BD809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C1DA00-8854-4AF3-932E-6512B30BD809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C1DA00-8854-4AF3-932E-6512B30BD809}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

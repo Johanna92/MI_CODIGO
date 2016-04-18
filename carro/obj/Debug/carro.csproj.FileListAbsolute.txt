@@ -1,0 +1,10 @@
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\carro\bin\Debug\carro.dll
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\carro\bin\Debug\carro.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\carro\obj\Debug\carro.dll
+c:\users\usuario\documents\visual studio 2015\Projects\llamarcarro\carro\obj\Debug\carro.pdb
+E:\escritorio\llamarcarro\carro\bin\Debug\carro.dll
+E:\escritorio\llamarcarro\carro\bin\Debug\carro.pdb
+E:\escritorio\llamarcarro\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
+E:\escritorio\llamarcarro\carro\obj\Debug\carro.dll
+E:\escritorio\llamarcarro\carro\obj\Debug\carro.pdb
