@@ -8,3 +8,8 @@ E:\escritorio\llamarcarro\carro\bin\Debug\carro.pdb
 E:\escritorio\llamarcarro\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
 E:\escritorio\llamarcarro\carro\obj\Debug\carro.dll
 E:\escritorio\llamarcarro\carro\obj\Debug\carro.pdb
+C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\bin\Debug\carro.dll
+C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\bin\Debug\carro.pdb
+C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
+C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.dll
+C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.pdb
