@@ -14,7 +14,9 @@ namespace llamarcarro
         static void Main(string[] args)
         {
             carrodepaseo.velocidadmaxima = 150;
-            carrodepaseo.galones = 10;
+            carrodepaseo.galones = 31;
+            carrodepaseo.velocidad = 0;
+            carrodepaseo.distanciarecorrida = 0;
             prendercarro();
             acelerar();
             Console.Read();
@@ -40,7 +42,8 @@ namespace llamarcarro
             switch (carrodepaseo.cambio)
             {
                 case 1:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 10;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 15;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 20;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -58,9 +61,9 @@ namespace llamarcarro
                         Console.WriteLine("su carro esta andando exitosamente");
                     }
                     break;
-
                 case 2:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 20;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 35;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 45;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -78,10 +81,9 @@ namespace llamarcarro
                         Console.WriteLine("su carro esta andando exitosamente");
                     }
                     break;
-
                 case 3:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 40;
-                    carrodepaseo.galones = carrodepaseo.galones + 30;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 50;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 65;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -99,9 +101,9 @@ namespace llamarcarro
                         Console.WriteLine("su carro esta andando exitosamente");
                     }
                     break;
-
                 case 4:
                     carrodepaseo.velocidad = carrodepaseo.velocidad + 90;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 80;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -111,7 +113,7 @@ namespace llamarcarro
                     {
                         carrodepaseo.galones = carrodepaseo.galones - 3;
                         {
-                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
+                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");                            
                         }
                     }
                     else
@@ -119,9 +121,9 @@ namespace llamarcarro
                         Console.WriteLine("su carro esta andando exitosamente");
                     }
                     break;
-
                 case 5:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 150;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 180;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 90;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -131,13 +133,13 @@ namespace llamarcarro
                     {
                         carrodepaseo.galones = carrodepaseo.galones - 3;
                         {
-                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
+                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");                            
                         }
                     }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
-                    }
+                    }                    
                     break;
             }
         }
