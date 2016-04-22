@@ -22,3 +22,11 @@ C:\Users\Johanna\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\llamarcarro.exe
 C:\Users\Johanna\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\llamarcarro.pdb
 C:\Users\Johanna\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\carro.dll
 C:\Users\Johanna\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\carro.pdb
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\llamarcarro.exe.config
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\llamarcarro.exe
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\llamarcarro.pdb
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\carro.dll
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\bin\Debug\carro.pdb
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\obj\Debug\llamarcarro.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\obj\Debug\llamarcarro.exe
+C:\Users\Usuario\Source\Repos\MI_CODIGO\llamarcarro\obj\Debug\llamarcarro.pdb

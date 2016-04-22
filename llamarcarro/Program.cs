@@ -83,7 +83,7 @@ namespace llamarcarro
                     break;
                 case 3:
                     carrodepaseo.velocidad = carrodepaseo.velocidad + 50;
-                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 65;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 40;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -102,7 +102,7 @@ namespace llamarcarro
                     }
                     break;
                 case 4:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 90;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 155;
                     carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 80;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
@@ -122,7 +122,7 @@ namespace llamarcarro
                     }
                     break;
                 case 5:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 180;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 100;
                     carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 90;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
