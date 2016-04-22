@@ -18,8 +18,13 @@ namespace llamarcarro
             carrodepaseo.velocidad = 0;
             carrodepaseo.distanciarecorrida = 0;
             prendercarro();
-            acelerar();
-            Console.Read();
+
+            while (carrodepaseo.cambio != -1)
+
+            {                
+                acelerar();            
+            }            
+            
         }
         public static void prendercarro()
         {
@@ -113,7 +118,7 @@ namespace llamarcarro
                     {
                         carrodepaseo.galones = carrodepaseo.galones - 3;
                         {
-                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");                            
+                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
                         }
                     }
                     else
@@ -133,18 +138,21 @@ namespace llamarcarro
                     {
                         carrodepaseo.galones = carrodepaseo.galones - 3;
                         {
-                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");                            
+                            Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
                         }
                     }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
-                    }                    
+                    }
                     break;
             }
+
         }
 
     }
+
 }
+
 
 
