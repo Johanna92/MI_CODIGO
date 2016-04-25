@@ -68,7 +68,7 @@ namespace llamarcarro
                     break;
                 case 2:
                     carrodepaseo.velocidad = carrodepaseo.velocidad + 35;
-                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 45;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida +10;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
@@ -88,13 +88,13 @@ namespace llamarcarro
                     break;
                 case 3:
                     carrodepaseo.velocidad = carrodepaseo.velocidad + 50;
-                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 40;
+                    carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 15;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
                         carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
                         Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
                     }
-                    else if (carrodepaseo.distanciarecorrida >= 50)
+                    else if (carrodepaseo.distanciarecorrida > 50)
                     {
                         carrodepaseo.galones = carrodepaseo.galones - 3;
                         {
@@ -107,7 +107,7 @@ namespace llamarcarro
                     }
                     break;
                 case 4:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 155;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 50;
                     carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 80;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
@@ -127,7 +127,7 @@ namespace llamarcarro
                     }
                     break;
                 case 5:
-                    carrodepaseo.velocidad = carrodepaseo.velocidad + 100;
+                    carrodepaseo.velocidad = carrodepaseo.velocidad + 90;
                     carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 90;
                     if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                     {
