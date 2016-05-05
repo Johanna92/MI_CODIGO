@@ -21,12 +21,7 @@ namespace llamarcarro
 
             while (carrodepaseo.cambio != -1)
 
-            {
-                carrodepaseo.velocidadmaxima = 150;
-                carrodepaseo.galones = 8;
-                carrodepaseo.velocidad = 0;
-                carrodepaseo.distanciarecorrida = 0;
-                prendercarro();
+            {               
                 acelerar();            
             }            
             
@@ -66,6 +61,10 @@ namespace llamarcarro
                             carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
                             Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
                         }
+                        else
+                        {
+                            Console.WriteLine("su carro esta andando exitosamente");
+                        }
                     }                    
                     else
                     {
@@ -86,6 +85,10 @@ namespace llamarcarro
                         {
                             carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
                             Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
+                        }
+                        else
+                        {
+                            Console.WriteLine("su carro esta andando exitosamente");
                         }
                     }                    
                     else
