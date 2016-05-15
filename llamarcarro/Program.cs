@@ -18,27 +18,33 @@ namespace llamarcarro
             carrodepaseo.velocidad = 0;
             carrodepaseo.distanciarecorrida = 0;
             prendercarro();
+           
 
             while (carrodepaseo.cambio != -1)
 
             {               
                 acelerar();            
-            }            
-            
-        }
-        public static void prendercarro()
+            }                                       
+        }              
+        public static void prendercarro()         
         {
             if (carrodepaseo.encendido == true)
             {
-                Console.WriteLine("su carro esta encendido no se puede volver a encender");
+                Console.WriteLine("su carro esta encendido");
             }
             else
             {
                 carrodepaseo.encendido = true;
-                Console.WriteLine("su carro esta encendido");
+                Console.WriteLine("No puede volver a encender el carro");
             }
-        }
-        public static void acelerar()
+            Console.WriteLine("Que acción desea hacer con el carro");
+            Console.Write("1. Acelerar\n2. Frenar");
+            carrodepaseo.accion = int.Parse(Console.ReadLine());
+
+            switch (carrodepaseo.accion != 0)                
+                {
+                case 1:                   
+         public static void acelerar()
         {
             Console.Write("En cuanto va acelarar en kilomentros por hora\n");
             Console.Write("1. Primera\n2. Segunda\n3. Tercera\n4. Cuarta\n5. Quinta\n");
@@ -65,7 +71,7 @@ namespace llamarcarro
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
-                    }                    
+                    }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
@@ -90,7 +96,7 @@ namespace llamarcarro
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
-                    }                    
+                    }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
@@ -114,8 +120,8 @@ namespace llamarcarro
                         else
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
-                        }                       
-                    }                   
+                        }
+                    }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
@@ -167,12 +173,17 @@ namespace llamarcarro
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
                         break;
-                    }                    
+                    }
                     else
                     {
                         Console.WriteLine("su carro esta andando exitosamente");
                     }
                     break;
+            
+                 }
+        
+            }
+            
             }
 
         }

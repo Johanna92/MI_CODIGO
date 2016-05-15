@@ -8,6 +8,12 @@ namespace carro
 {
     public class Carro
     {
+        private int _accion;
+        public int accion
+        {
+            get { return _accion; }
+            set { _accion = value; }
+        }
         private bool _encendido;
 
         public bool encendido
