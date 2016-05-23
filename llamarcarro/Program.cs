@@ -45,8 +45,8 @@ namespace llamarcarro
             {
                 Console.WriteLine("su carro solo esta predido");
                 return;
-            }
-
+            }          
+                        
             if (carrodepaseo.accion == 1)
             {
                 Console.Write("En cuanto va acelarar en kilomentros por hora\n");
@@ -159,14 +159,14 @@ namespace llamarcarro
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
                         break;
-                }
-                if (carrodepaseo.accion == 2)
-                {
-                    Console.WriteLine("Tiene que acelerar para poder frenar");
-                }
+                }                
+            }
+            if (carrodepaseo.cambio == 0)
+            {
+                Console.WriteLine("solo esta frenando");
                 return;
-            }           
-           if (carrodepaseo.accion == 2)
+            }
+            if (carrodepaseo.accion == 2)
             {
                 Console.Write("En cuanto va a frenar en kilomentros por hora\n");
                 Console.Write("1. Primera\n2. Segunda\n3. Tercera\n4. Cuarta\n5. Quinta\n");
