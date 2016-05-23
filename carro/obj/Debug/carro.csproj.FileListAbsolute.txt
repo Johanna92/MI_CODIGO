@@ -13,3 +13,8 @@ C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\bin\Debug\carro.pdb
 C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
 C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.dll
 C:\Users\Johanna\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.pdb
+C:\Users\bits QA\Source\Repos\MI_CODIGO\carro\bin\Debug\carro.dll
+C:\Users\bits QA\Source\Repos\MI_CODIGO\carro\bin\Debug\carro.pdb
+C:\Users\bits QA\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.csprojResolveAssemblyReference.cache
+C:\Users\bits QA\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.dll
+C:\Users\bits QA\Source\Repos\MI_CODIGO\carro\obj\Debug\carro.pdb

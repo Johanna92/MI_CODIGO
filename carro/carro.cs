@@ -65,5 +65,11 @@ namespace carro
             get { return _Distanciarecorrida; }
             set { _Distanciarecorrida = value; }
         }
+        private int _freno;
+        public int freno
+        {
+            get { return _freno; }
+            set { _freno = value; }
+        }
     }
 }
