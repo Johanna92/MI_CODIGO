@@ -18,10 +18,15 @@ namespace llamarcarro
             carrodepaseo.velocidad = 0;
             carrodepaseo.distanciarecorrida = 0;
             prendercarro();
+
             while (carrodepaseo.cambio != -1)
 
             {
+                Console.WriteLine("carrodepaseo.galones =" + (carrodepaseo.galones));
+                Console.WriteLine("carrodepaseo.velocidad =" + (carrodepaseo.velocidad));
+                Console.WriteLine(" carrodepaseo.distanciarecorrida =" + (carrodepaseo.distanciarecorrida));
                 acelerar();
+
             }
         }
         public static void prendercarro()
@@ -44,9 +49,8 @@ namespace llamarcarro
             if (carrodepaseo.accion != 1 && carrodepaseo.accion != 2)
             {
                 Console.WriteLine("su carro solo esta predido");
-                return;
-            }          
-                        
+            }
+            Console.Clear();
             if (carrodepaseo.accion == 1)
             {
                 Console.Write("En cuanto va acelarar en kilomentros por hora\n");
@@ -57,17 +61,19 @@ namespace llamarcarro
                     case 1:
                         carrodepaseo.velocidad = carrodepaseo.velocidad + 15;
                         carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 20;
+                        Console.Clear();
                         if (carrodepaseo.distanciarecorrida >= 50)
                         {
                             carrodepaseo.galones = carrodepaseo.galones - 3;
                             if (carrodepaseo.galones == 0)
                             {
                                 Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
-                            }
+
+                            }                            
                             else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                             {
                                 Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
-                            }                            
+                            }
                         }
                         else
                         {
@@ -87,7 +93,7 @@ namespace llamarcarro
                             else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                             {
                                 Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
-                            }                            
+                            }
                         }
                         else
                         {
@@ -131,7 +137,7 @@ namespace llamarcarro
                             else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
                             {
                                 Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
-                            }                           
+                            }
                         }
                         else
                         {
@@ -143,7 +149,7 @@ namespace llamarcarro
                         carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 55;
                         if (carrodepaseo.distanciarecorrida >= 50)
                         {
-                            carrodepaseo.galones = carrodepaseo.galones - 3;
+                            carrodepaseo.galones = carrodepaseo.galones - 3;                           
                             if (carrodepaseo.galones == 0)
                             {
                                 Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
@@ -152,20 +158,20 @@ namespace llamarcarro
                             {
                                 carrodepaseo.velocidad = carrodepaseo.velocidadmaxima;
                                 Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
-                            }                                                      
+                            }
                         }
                         else
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
                         break;
-                }                
-            }
+                }               
+            }           
             if (carrodepaseo.cambio == 0)
             {
                 Console.WriteLine("solo esta frenando");
                 return;
-            }
+            }           
             if (carrodepaseo.accion == 2)
             {
                 Console.Write("En cuanto va a frenar en kilomentros por hora\n");
@@ -181,10 +187,10 @@ namespace llamarcarro
                         }
                         else
                         {
-                            carrodepaseo.velocidad = carrodepaseo.velocidad -15;
-                            carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida -20;
+                            carrodepaseo.velocidad = carrodepaseo.velocidad - 15;
+                            carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida - 20;
                             if (carrodepaseo.distanciarecorrida == 0)
-                            {                               
+                            {
                                 if (carrodepaseo.galones == 0)
                                 {
                                     Console.WriteLine("su carro se esta apagando");
@@ -192,7 +198,7 @@ namespace llamarcarro
                                 else if (carrodepaseo.velocidad == 0)
                                 {
                                     Console.WriteLine("su carro se esta apagando");
-                                }                                
+                                }
                             }
                             else
                             {
@@ -225,7 +231,7 @@ namespace llamarcarro
                                 Console.WriteLine("su carro esta andando exitosamente");
                             }
                         }
-                        break;                       
+                        break;
                     case 3:
                         if (carrodepaseo.cambio == 1 || carrodepaseo.cambio == 2 || carrodepaseo.cambio == 5)
                         {
@@ -304,14 +310,13 @@ namespace llamarcarro
                             }
                         }
                         break;
+                        
                 }
-
-            }
-        }
-
-    }
-
+            }            
+        }        
+    }    
 }
+
 
 
 
