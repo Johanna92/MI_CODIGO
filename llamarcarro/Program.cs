@@ -10,6 +10,7 @@ namespace llamarcarro
     static class Program
     {
         static Carro carrodepaseo = new Carro();
+        static int ultimo_cambio = 0;
 
         static void Main(string[] args)
         {
@@ -18,6 +19,7 @@ namespace llamarcarro
             carrodepaseo.velocidad = 0;
             carrodepaseo.distanciarecorrida = 0;
             prendercarro();
+
 
             while (carrodepaseo.cambio != -1)
 
@@ -59,54 +61,85 @@ namespace llamarcarro
                 switch (carrodepaseo.cambio)
                 {
                     case 1:
+                        if (ultimo_cambio == 2|| ultimo_cambio == 3 || ultimo_cambio == 4 || ultimo_cambio == 5)
+                        {
+                            Console.WriteLine("No puede realizar este cambio");
+                            return;
+                        }
+                        if (carrodepaseo.cambio == ultimo_cambio)
+                        {
+                            Console.WriteLine("su carro esta andando exitosamente");
+                            return;
+                        }
                         carrodepaseo.velocidad = carrodepaseo.velocidad + 15;
-                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 20;
-                        Console.Clear();
-                        if (carrodepaseo.distanciarecorrida >= 50)
-                        {
-                            carrodepaseo.galones = carrodepaseo.galones - 3;
-                            if (carrodepaseo.galones == 0)
+                            carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 20;                           
+                            if (carrodepaseo.distanciarecorrida >= 50)
                             {
-                                Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
+                                carrodepaseo.galones = carrodepaseo.galones - 3;
+                                if (carrodepaseo.galones <= 0)
+                                {
+                                    Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
 
-                            }                            
-                            else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
-                            {
-                                Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
+                                }
+                                else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
+                                {
+                                    Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
+                                }
                             }
-                        }
-                        else
-                        {
-                            Console.WriteLine("su carro esta andando exitosamente");
-                        }
-                        break;
+                            else
+                            {
+                                Console.WriteLine("su carro esta andando exitosamente");
+                            }
+                        ultimo_cambio = carrodepaseo.cambio;                   
+                            break;
                     case 2:
-                        carrodepaseo.velocidad = carrodepaseo.velocidad + 25;
-                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 29;
-                        if (carrodepaseo.distanciarecorrida >= 50)
+                        if (ultimo_cambio == 3 || ultimo_cambio == 4 || ultimo_cambio == 5)
                         {
-                            carrodepaseo.galones = carrodepaseo.galones - 3;
-                            if (carrodepaseo.galones == 0)
-                            {
-                                Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
-                            }
-                            else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
-                            {
-                                Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
-                            }
+                            Console.WriteLine("No puede realizar este cambio");
+                            return;
                         }
-                        else
+                        if (carrodepaseo.cambio == ultimo_cambio)
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
+                            return;
                         }
+                        carrodepaseo.velocidad = carrodepaseo.velocidad + 20;
+                            carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 25;
+                            if (carrodepaseo.distanciarecorrida >= 50)
+                            {
+                                carrodepaseo.galones = carrodepaseo.galones - 3;
+                                if (carrodepaseo.galones <= 0)
+                                {
+                                    Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
+                                }
+                                else if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
+                                {
+                                    Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("su carro esta andando exitosamente");
+                            }                        
+                        ultimo_cambio = carrodepaseo.cambio;            
                         break;
                     case 3:
-                        carrodepaseo.velocidad = carrodepaseo.velocidad + 35;
-                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 39;
+                        if (ultimo_cambio == 4 || ultimo_cambio == 5)
+                        {
+                            Console.WriteLine("No puede realizar este cambio");
+                            return;
+                        }
+                        if (carrodepaseo.cambio == ultimo_cambio)
+                        {
+                            Console.WriteLine("su carro esta andando exitosamente");
+                            return;
+                        }
+                        carrodepaseo.velocidad = carrodepaseo.velocidad + 30;
+                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 35;
                         if (carrodepaseo.distanciarecorrida >= 50)
                         {
                             carrodepaseo.galones = carrodepaseo.galones - 3;
-                            if (carrodepaseo.galones == 0)
+                            if (carrodepaseo.galones <= 0)
                             {
                                 Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
                             }
@@ -123,14 +156,28 @@ namespace llamarcarro
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
+                        ultimo_cambio = carrodepaseo.cambio;
                         break;
                     case 4:
-                        carrodepaseo.velocidad = carrodepaseo.velocidad + 75;
-                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 50;
+                        if (ultimo_cambio == 5)
+                        {
+                            Console.WriteLine("No puede realizar este cambio");
+                            return;
+                        }                       
+                        if (carrodepaseo.cambio == ultimo_cambio)
+                        {
+                            if (carrodepaseo.velocidad >= carrodepaseo.velocidadmaxima)
+                            {
+                                Console.WriteLine("El carro esta en su velocidad máxima " + carrodepaseo.velocidadmaxima + "Kilometros por hora");
+                            }
+                            return;
+                        }
+                        carrodepaseo.velocidad = carrodepaseo.velocidad + 40;
+                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 55;
                         if (carrodepaseo.distanciarecorrida >= 50)
                         {
                             carrodepaseo.galones = carrodepaseo.galones - 3;
-                            if (carrodepaseo.galones == 0)
+                            if (carrodepaseo.galones <= 0)
                             {
                                 Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
                             }
@@ -143,14 +190,23 @@ namespace llamarcarro
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
+                        ultimo_cambio = carrodepaseo.cambio;
                         break;
                     case 5:
+                        if (carrodepaseo.cambio == ultimo_cambio)
+                        {
+                            if (carrodepaseo.galones <= 0)
+                            {
+                                Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
+                            }
+                            return;
+                        }                        
                         carrodepaseo.velocidad = carrodepaseo.velocidad + 55;
-                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 55;
+                        carrodepaseo.distanciarecorrida = carrodepaseo.distanciarecorrida + 60;
                         if (carrodepaseo.distanciarecorrida >= 50)
                         {
                             carrodepaseo.galones = carrodepaseo.galones - 3;                           
-                            if (carrodepaseo.galones == 0)
+                            if (carrodepaseo.galones <= 0)
                             {
                                 Console.WriteLine("su carro se quedo sin gasolina y se va a apagar");
                             }
@@ -164,6 +220,7 @@ namespace llamarcarro
                         {
                             Console.WriteLine("su carro esta andando exitosamente");
                         }
+                        ultimo_cambio = carrodepaseo.cambio;
                         break;
                 }               
             }           
